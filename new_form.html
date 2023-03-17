@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Форма обратной связи</title>
+	<style>
+h2.forms {
+    font-family: system-ui;
+    font-weight: 100;
+    text-align: center;
+}
+divcenter {
+    width: 680px;
+    display: block;
+    top: 45%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+} form.new_form {
+    width: 600px;
+    border: 1px solid red;
+    display: block;
+}form.new_form textarea {
+    width: 99%;
+    margin: 10px 0;
+    height: 100px;
+    resize: none;
+    text-indent: 20px;
+    padding: 12px 0;
+}form.new_form input[type="text"] {
+    width: 49%;
+    padding: 10px 0;
+    text-indent: 15px;
+}form.new_form input {
+    width: 49%;
+    padding: 10px 0;
+    text-indent: 15px;
+}form.new_form {
+    width: 600px;
+    border: 1px solid #cecece;
+    display: block;
+    height: 210px;
+    padding: 40px;     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 3px 6px rgba(0,0,0,0.22);     margin: auto;
+}form.new_form input[type="submit"] {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #606060;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+	// Автор формы Аминев Марат
+	// Понравился форма?
+	// Скажи спасибо :   https://dwweb.ru/help_to_dwweb.ru.html
+	<divcenter>
+		<h2 class="forms">Отправить сообщение:</h2>
+		<form method="post" class="new_form">
+			<input type="text" name="name"  title="Введите ваше имя" placeholder="Имя"  required >
+			<input type="text" name="email" placeholder="Почта" required>
+			<textarea name="mess" placeholder="Сообщение" required></textarea>
+			<input type="submit" value="Отправить">
+		</form>
+	</divcenter>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Контакты</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="div1">
+            <a href="index.html"><img src="./icons/logo1.svg" alt="logo" class="logo" /></a>
+        </div>
+        <div class="div2">
+            <h1 class="name">Guitarband</h1>
+        </div>
+        <img src="./icons/icon4.svg" alt="logo" class="logo4" />
+
+    </header>
+
+    <nav class="navbar">
+        <img src="./icons/icon3.svg" alt="logo" class="logo1" />
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="index.html">Главная</a></li>
+            <li class="navbar__item"><a href="electroguitar.html">Электрогитары</a></li>
+            <li class="navbar__item"><a href="guitar.html">Классические(акустические)</a></li>
+            <li class="navbar__item"><a href="contact.html">Контакты</a></li>
+        </ul>
+        <a href="mailto:vl@yandex.ru"><img src="./icons/icon2.svg" alt="logo" class="logo1" />
+        </a>
+    </nav>
+
+
+    <div class="ticker">
+        <span> Реклама </span>
+    </div>
+
+
+    <div class="div3">
+        <h2 class="title">Контактная информация</h2>
+    </div>
+
+    <main class="main">
+
+        <div class="col_w310 float_l">
+
+            <h4 class="title">Пожалуйста, заполните контактную форму</h4>
+
+            <div id="contact_form">
+
+                <form method="post" action="">
+
+                    <label for="author"><br>Ваше имя:</label>
+                    <input type="text" name="name" pattern="[А-Яа-яЁё]{4,}" title="Имя должно быть на русском. Пример: Степа, Петя, Вася, Оля" class="required input_field" />
+
+                    <label for="email"><br>Ваш Email:</label>
+                    <input type="text" name="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" title="Пример: bloggood@mail.ru" class="validate-email required input_field" required />
+
+                    <label for="text"><br>Ваш вопрос:</label>
+                    <textarea name="quest" rows="0" cols="0" class="required"></textarea>
+                    <div class="cleaner h10"></div>
+
+                    <input type="submit" class="submit_btn" name="submit" value="Отправить" />
+                    <input type="reset" class="submit_btn" name="reset" value="Очистить" />
+
+
+
+                </form>
+            </div>
+            <div class="cleaner h10"></div>
+            <div class="cleaner h10"></div>
+        </div>
+
+
+        <div class="col_w310 float_r">
+
+            <h4 class="title">Наше место нахождения</h4>
+            <br>
+            <div class="image_wrapper"><span></span><a href="http://maps.google.com" target="_blank"><img src="images/map_thumb.jpg" alt="Image" /></a></div>
+            <div class="cleaner h30"></div>
+            <br>
+            <h4 class="title">Наш адрес</h4>
+            <br>
+            Центр Ювента<br>
+            ЯНАО <br>
+            г.Ноябрьск<br>
+            Муравленко 3<br>
+            <br>
+            Tel: 89821683600<br>
+            Email: <a href="artemtusaliev22@gmail.com@gmail.com">artemtusaliev22@gmail.com</a>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <img src="./icons/icon3.svg" alt="logo" class="logo1" />
+
+        <p>&#169;2023&nbsp;&nbsp; ЯНАО&nbsp;&nbsp; г.Ноябрьск</p>
+
+        <a href="tel:+79224547569" class="call-button">Позвонить</a>
+    </footer>
+
+</body>
+
+</html>
